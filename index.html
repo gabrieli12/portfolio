@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- მცირე ინფორმაცია ჩემს შესახებ ქარდის სახით -->
+    <canvas id='canvas1'></canvas>
+    <canvas id='canvas2'></canvas>
+
+
+        <div class="circle-div">
+            <div class="circle"></div>
+        </div>
+
+        <div class="container">
+            <img class="img" src="/photos/anonymus.jpg" alt="photo">
+
+            <div class="txt">
+                <img class="my-foto" src="/photos/my-photo.jpg" alt="gabrieli">
+
+                <h1 id="name">Gabriel Molodini <span id="age">13</span></h1>
+                
+                <p id="country">Georgia</p>
+                <hr>
+                <div class="social">
+                    <h1 class="developer">Front-end Web Developer - 2022</h1>
+                    <a href="/page-2/main.html"><button id="continue">Continue</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- background -->
+        <script src="script.js"></script>
+
+
+
+
+        <!-- მრგვალი წრეების ანიმაცია -->
+        <div class="circle-div">
+            <div class="circle" ></div>   
+        </div> 
+        <svg>
+            <filter id="wavy">
+                <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02'0.005;0.02" repeatCount="indefinate">
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" scale="30">
+            </filter>
+        </svg>  
+    
+
+</body>
+</html>
